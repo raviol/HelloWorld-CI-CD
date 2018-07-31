@@ -27,7 +27,7 @@ func loadPage() (*Page, error) {
 
 func viewHandler(w http.ResponseWriter, r *http.Request) {
 	p, _ := loadPage()
-	t, _ := template.ParseFiles("index2.tpl")
+	t, _ := template.ParseFiles("index.tpl")
 	t.Execute(w, p)
 }
 
